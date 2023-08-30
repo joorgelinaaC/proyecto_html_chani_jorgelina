@@ -1,0 +1,105 @@
+/* GENERAL */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.site {
+    border: 2px solid #ddd;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.site h2 {
+    margin: 0;
+}
+
+.espacio1{
+    height: 150px;
+}
+
+.espacio2{
+    height: 100px;
+}
+
+.espacio3{
+    height: 150px;
+}
+
+/* IMAGENES */
+.carousel{
+    display: flex;
+    justify-content: center;
+}
+
+.slide{
+    width: 70%;
+    margin: 10px;
+}
+
+.slide img{
+    width: 200px;
+    height: 700px;
+}
+
+/* OPINIONES */
+.opiniones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    justify-content: center;  
+    margin-top: 30px;  
+
+}
+
+.opinion{
+    margin-bottom: 10px;
+}
+
+.nombre{
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.descripcion{
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+/* ESTRELLAS */
+.estrellas{
+    display: flex;
+    height: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.estrella{
+    color: #FFD700;
+    font-size: 30px;
+}
+
+.estrella.rellena::before {
+    content: "\2605";
+}
+
+.estrella.no-rellena::before {
+    content: "\2606"; 
+}
+
+

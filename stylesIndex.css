@@ -1,0 +1,131 @@
+/* navegador ------------------------------------------------------ */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3ece4;
+}
+
+.header {
+    display: flex;
+    background-color: #362309;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+div .logo{
+    height: 75px;
+    width: 200px;
+}
+
+.logo img{
+    height: 80px;
+    width: 180px;
+    margin: 10px;
+}
+
+.nav-links{
+    list-style: none;
+    margin: 10px;
+    text-align: right;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links li{
+    display: inline-block; 
+    padding: 0 20px;
+}
+
+.nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.nav-links a{
+    font-size: 700;
+    color: #f3ece4;
+    text-decoration: none;
+}
+
+/* presentacion ------------------------------------------------- */
+.fondo{
+height: 150px;
+background-image: url(img/fondo.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.espacio{
+    height: 50px;
+}
+
+.presentacion{
+    color: rgb(221, 199, 176);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+
+/* sitios ------------------------------------------------------- */
+.principal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px; /* espacio entre sitios */
+    justify-content: center;
+}
+
+/* estilos de los sitos ---------------------------------------- */
+.place{
+    border: 2px solid #8a6638;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    max-width: 500px;
+}
+
+.place img{
+    max-width: 100%;
+    height: 300px;
+}
+
+.sitio{
+    height: 10px;
+}
+
+p{
+    height: 10px;
+    margin: 3px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.estrellas{
+    height: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.estrella{
+    color: #FFD700;
+    font-size: 24px;
+}
+
+.estrella.rellena::before {
+    content: "\2605";
+}
+
+.estrella.no-rellena::before {
+    content: "\2606"; 
+}
